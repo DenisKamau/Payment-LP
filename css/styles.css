@@ -539,7 +539,7 @@ a {
       .heroTop .nav .mobileMenu .menu {
         display: none;
         position: absolute;
-        right: 0px;
+        right: -6px;
         padding: 10px;
         background-color: #fff;
         z-index: 100;
@@ -547,21 +547,17 @@ a {
         width: 100%;
         margin-top: 15px; }
         .heroTop .nav .mobileMenu .menu li {
-          margin: 10px 0px;
+          margin: 12px 0px;
           font-family: "DM Sans", sans-serif;
           letter-spacing: 0.03em;
           text-align: center; }
         .heroTop .nav .mobileMenu .menu button {
           width: 100%;
           height: 30px;
-          margin: 3px 0px;
           border: none;
           font-weight: 600;
           font-size: 14px;
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          font-family: "DM Sans", sans-serif;
-          border-radius: 8px; }
+          font-family: "DM Sans", sans-serif; }
         .heroTop .nav .mobileMenu .menu .signupButton {
           background-color: #344293;
           color: #fff; }
@@ -569,7 +565,7 @@ a {
         cursor: pointer;
         display: inline-block;
         padding: 10px 10px;
-        margin-right: -10px;
+        transform: translateX(10px);
         position: relative;
         user-select: none; }
       .heroTop .nav .mobileMenu .menuIcon .navicon {
@@ -716,7 +712,8 @@ a {
   .aboutSectionBottom .contactSection {
     margin: 0px 20px;
     text-align: center;
-    padding: 30px 20px; }
+    padding: 30px 20px;
+    border-radius: 8px; }
     .aboutSectionBottom .contactSection .contactLeft {
       width: 100%; }
       .aboutSectionBottom .contactSection .contactLeft h2 {
@@ -731,8 +728,12 @@ a {
       width: 100%;
       max-width: 100%;
       position: static;
-      padding: 30px 15px;
-      margin-top: 30px; }
+      padding: 30px 18px;
+      margin-top: 30px;
+      border-radius: 8px; }
+      .aboutSectionBottom .contactSection .contactRight h2 {
+        font-size: 17px;
+        line-height: 24px; }
   .footer .footerTop .footerColumns {
     flex-direction: column; }
   .footer .footerBottom {
