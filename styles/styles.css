@@ -8,6 +8,10 @@ html {
   font-family: "DM Sans", sans-serif;
   scroll-behavior: smooth; }
 
+body {
+  height: 100%;
+  width: 100%; }
+
 a {
   text-decoration: none;
   color: #000; }
@@ -26,9 +30,22 @@ a {
   background: radial-gradient(104.62% 177.97% at 100% -3.21%, #f1ab6c 44.84%, #000e60 100%);
   width: 100%; }
 
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3000;
+  transition: all ease-in-out 250ms; }
+
+.nav-active {
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%); }
+
 .nav {
   display: flex;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   justify-content: space-between;
   align-items: center; }
 
@@ -527,7 +544,7 @@ a {
     margin: 0px 20px; }
   .heroTop .nav {
     margin-top: 12px;
-    position: relative; }
+    margin-bottom: 12px; }
     .heroTop .nav .brandLogo a img, .heroTop .nav #footerSection .footer .footerBottom .copyright .brandLogo a img, #footerSection .footer .footerBottom .copyright .heroTop .nav .brandLogo a img {
       width: 36px;
       height: 14.24px;
@@ -539,10 +556,10 @@ a {
       .heroTop .nav .mobileMenu .menu {
         display: none;
         position: absolute;
-        right: -6px;
-        padding: 10px;
+        right: 0px;
+        padding: 10px 20px;
         background-color: #fff;
-        z-index: 100;
+        z-index: 2000;
         list-style: none;
         width: 100%;
         margin-top: 15px; }
@@ -612,7 +629,8 @@ a {
     max-width: 100%;
     overflow: hidden; }
     .heroTop .heroContent .contentLeft {
-      margin: 0px 20px; }
+      margin: 0px 20px;
+      z-index: 1000; }
       .heroTop .heroContent .contentLeft .content {
         width: 253px;
         margin: 0 auto;
@@ -632,8 +650,7 @@ a {
         width: 100%;
         height: 100%;
         object-fit: contain;
-        opacity: 50%;
-        overflow: hidden; }
+        opacity: 70%; }
   .heroBottom {
     width: 90%;
     padding: 30px 20px;
@@ -659,7 +676,8 @@ a {
     text-align: center; }
   .aboutSectionTop .solutionsSection {
     margin-top: 60px;
-    background: url(../images/moroccan-flower-dark.png); }
+    background: url(../images/moroccan-flower-dark.png);
+    border-radius: 8px; }
     .aboutSectionTop .solutionsSection .blueBackground {
       padding: 30px 20px;
       background: none; }
@@ -674,7 +692,8 @@ a {
       margin-bottom: 50px; }
       .aboutSectionTop .solutionsSection .solutionsRow .solutionContent {
         padding: 40px 35px;
-        width: 250px; }
+        width: 250px;
+        border-radius: 8px; }
         .aboutSectionTop .solutionsSection .solutionsRow .solutionContent h3 {
           text-align: center;
           height: fit-content;
@@ -756,5 +775,13 @@ a {
         font-size: 18px; } }
 
 @media only screen and (max-width: 360px) {
-  .heroBottom .features h2 {
-    font-size: 10px; } }
+  .heroBottom .features {
+    gap: 25px; }
+    .heroBottom .features h2 {
+      font-size: 10px; } }
+
+@media only screen and (max-width: 320px) {
+  .heroBottom .features {
+    gap: 20px; }
+    .heroBottom .features h2 {
+      font-size: 10px; } }
