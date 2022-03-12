@@ -165,7 +165,7 @@ a {
   .heroBottom .features {
     display: flex;
     width: 100%;
-    gap: 150px; }
+    justify-content: space-around; }
     .heroBottom .features h2 {
       color: #344293;
       text-transform: uppercase;
@@ -539,7 +539,7 @@ a {
     #footerSection .footer .footerTop .footerColumns .column {
       width: 180px; } }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 990px) {
   .container {
     margin: 0px 20px; }
   .heroTop .nav {
@@ -658,10 +658,8 @@ a {
     margin-top: -44px; }
     .heroBottom .colorBars {
       margin-bottom: 10px; }
-    .heroBottom .features {
-      gap: 30px; }
-      .heroBottom .features h2 {
-        font-size: 12px; }
+    .heroBottom .features h2 {
+      font-size: 12px; }
   .aboutSectionTop h2 {
     font-size: 20px;
     line-height: 26px;
@@ -692,8 +690,8 @@ a {
       margin-bottom: 50px; }
       .aboutSectionTop .solutionsSection .solutionsRow .solutionContent {
         padding: 40px 35px;
-        width: 250px;
-        border-radius: 8px; }
+        width: 90%;
+        margin: 0 auto; }
         .aboutSectionTop .solutionsSection .solutionsRow .solutionContent h3 {
           text-align: center;
           height: fit-content;
@@ -718,6 +716,8 @@ a {
       .aboutSectionBottom .content .controlContent h2 {
         font-size: 24px;
         line-height: 34px; }
+      .aboutSectionBottom .content .controlContent p {
+        max-width: fit-content; }
     .aboutSectionBottom .content .controlBenefits {
       flex-direction: column;
       max-width: 100%;
@@ -775,13 +775,9 @@ a {
         font-size: 18px; } }
 
 @media only screen and (max-width: 360px) {
-  .heroBottom .features {
-    gap: 25px; }
-    .heroBottom .features h2 {
-      font-size: 10px; } }
+  .heroBottom .features h2 {
+    font-size: 10px; } }
 
 @media only screen and (max-width: 320px) {
-  .heroBottom .features {
-    gap: 20px; }
-    .heroBottom .features h2 {
-      font-size: 10px; } }
+  .heroBottom .features h2 {
+    font-size: 10px; } }

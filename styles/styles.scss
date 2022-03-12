@@ -225,7 +225,7 @@ a {
   .features {
     display: flex;
     width: 100%;
-    gap: 150px;
+    justify-content: space-around;
 
     h2 {
       color: $blueColor;
@@ -731,7 +731,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 990px) {
   .container {
     margin: 0px 20px;
   }
@@ -916,8 +916,6 @@ a {
       margin-bottom: 10px;
     }
     .features {
-      gap: 30px;
-
       h2 {
         font-size: 12px;
       }
@@ -967,8 +965,8 @@ a {
 
         .solutionContent {
           padding: 40px 35px;
-          width: 250px;
-          border-radius: 8px;
+          width: 90%;
+          margin: 0 auto;
           h3 {
             text-align: center;
             height: fit-content;
@@ -1007,6 +1005,10 @@ a {
         h2 {
           font-size: 24px;
           line-height: 34px;
+        }
+
+        p {
+          max-width: fit-content;
         }
       }
 
@@ -1109,8 +1111,6 @@ a {
 @media only screen and (max-width: 360px) {
   .heroBottom {
     .features {
-      gap: 25px;
-
       h2 {
         font-size: 10px;
       }
@@ -1121,7 +1121,6 @@ a {
 @media only screen and (max-width: 320px) {
   .heroBottom {
     .features {
-      gap: 20px;
       h2 {
         font-size: 10px;
       }
